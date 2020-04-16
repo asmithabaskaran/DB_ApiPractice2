@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model DB_ApiPractice2.Models.EF_Models.Rootobject
+
+@foreach (var item in Model.results)
+{
+    <br/>
+    @Html.DisplayFor(modelItem => item.recall_number)
+    <br />
+
+    @Html.DisplayFor(modelItem => item.country)
+    <br />
+    @Html.DisplayFor(modelItem => item.city)
+    <br />
+    @Html.DisplayFor(modelItem => item.reason_for_recall)
+    <br />
+    @Html.DisplayFor(modelItem => item.address_1)
+    <br />
+    @Html.DisplayFor(modelItem => item.code_info)
+    <br />
+    @Html.DisplayFor(modelItem => item.product_quantity)
+    <br />
+    @Html.DisplayFor(modelItem => item.center_classification_date)
+    <br />
+    @Html.DisplayFor(modelItem => item.event_id)
+    <br />
+}
+<a id="dbopt" asp-controller="Home" asp-action="PopulateTampaReports">
+    <p><b>Save to the database</b></p>
+</a>
