@@ -45,7 +45,7 @@ namespace DB_ApiPractice2.Models
 			public string classification { get; set; }
 			//[NotMapped]
 			//public string openfda { get; set; }
-
+			// This is a comment just for testing. By Mandeep.
 			[Key]
 			public string recall_number { get; set; }
 
